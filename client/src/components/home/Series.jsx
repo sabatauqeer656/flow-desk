@@ -2,7 +2,7 @@ import React from 'react'
 
 function Series() {
   return (
-  <button type="button" class="text-white bg-orange-500 box-border border border-transparent hover:bg-orange-700 rounded-full text-sm ">Series</button>  )
+  <button type="button" class="text-white bg-pink-500  hover:bg-pink-700 rounded-xl size-60" >Series</button>  )
 
   
 }

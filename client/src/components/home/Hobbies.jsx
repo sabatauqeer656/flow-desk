@@ -1,7 +1,7 @@
 
  export default function Hobbies() {
   return (
-    <button type="button" class="text-white  bg-pink-500  border-transparent hover:bg-pink-700 rounded-full text-sm box-border size-32 border-4 p-4">Hobbies</button>  )
+    <button type="button" class="text-white bg-green-500  hover:bg-green-700 rounded-xl size-60 ">Hobbies</button>  )
 
   
 }

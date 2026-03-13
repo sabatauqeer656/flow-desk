@@ -22,7 +22,7 @@ async function semanticSearchMovies(req, res) {
           exact: true,
           index: "vector_index",
           limit: 5,
-          path: "embeddings",
+          path: "embedding",
           queryVector: QueryResult.data[0].embedding,
         },
       },
