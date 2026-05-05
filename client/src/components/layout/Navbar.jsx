@@ -1,8 +1,15 @@
-import React from 'react'
+
+
 
 function Navbar() {
   return (
-    <div>FlowDesk</div>
+<>
+  <nav className= "bg-blue-200 w-full">
+  <h1>FLOW DESK</h1>
+  </nav>
+</>
+
+ 
   )
 }
 

@@ -1,7 +1,8 @@
 import React from 'react'
 
-function Welcome() {
+function WelcomeButton() {
+
   return <div className="relative left-0">Welcome user</div>;
 }
 
-export default Welcome
+export default WelcomeButton

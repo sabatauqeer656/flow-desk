@@ -7,6 +7,8 @@ import { VoyageAIClient } from "voyageai";
 
 async function semanticSearchMovies(req, res) {
   const { semanticQuery } = req.body;
+  console.log(semanticQuery);
+
   const client = new VoyageAIClient();
   // Generate embedding for the  user query
   try {
@@ -14,14 +16,15 @@ async function semanticSearchMovies(req, res) {
       input: [semanticQuery],
       model: "voyage-4-large",
     });
-    console.log("query embeddings created");
+    console.log("query embeddings created", QueryResult);
     // Retrieve semantically similar results using vector search
+
     const semanticResultMovies = await Movies.aggregate([
       {
         $vectorSearch: {
           exact: true,
-          index: "vector_index",
-          limit: 5,
+          index: "vector_index_1",
+          limit: 10,
           path: "embedding",
           queryVector: QueryResult.data[0].embedding,
         },
