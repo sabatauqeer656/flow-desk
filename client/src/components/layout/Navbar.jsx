@@ -4,7 +4,7 @@
 function Navbar() {
   return (
 <>
-  <nav className= "bg-blue-200 w-full">
+  <nav className= "bg-cyan-500 w-full">
   <h1>FLOW DESK</h1>
   </nav>
 </>

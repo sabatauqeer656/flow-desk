@@ -37,17 +37,21 @@ setisMovies(true)
 
   {isMovies ? moviesResult.map((movie)=>{return (
 
-   <div key={movie._id}>
+   <div key={movie._id} className='text-left'>
     <h1>title : {movie.original_title}</h1>
       <h1>genre : {movie.genre}</h1>
       <h1>synopsis :{movie.overview}</h1>
       <h1>release date : {movie.release_date}</h1>
-      <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={ `movie poster :${ movie.original_title}`}/>
-
-    </div>
+    
+      
+      <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={ `movie poster :${ movie.original_title}`} className='h-96'/>
+  </div>
+    
    
   )}):<p>no movies found</p>}
-</>
+
+  
+  </>
   )
 }
  
