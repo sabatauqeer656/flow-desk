@@ -1,5 +1,5 @@
 
-import searchMovies from '../../services/api'
+import {searchMovies} from '../../services/api.js'
 import { useState  } from 'react'
 
 
@@ -52,7 +52,6 @@ setisMovies(true)
 
   
   </>
-  )
-}
+  )}
  
 export default SearchBar

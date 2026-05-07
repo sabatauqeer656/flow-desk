@@ -5,6 +5,6 @@ import askHobbiesAi from "../controllers/askHobbiesAi.js";
 const router = Router();
 router.post("/embeddings/movies", createMoviesEmbeddings);
 router.post("/search/movies", semanticSearchMovies);
-router.post("/askAi/hobbies", askHobbiesAi);
+router.post("/askai/hobbies", askHobbiesAi);
 
 export default router;
