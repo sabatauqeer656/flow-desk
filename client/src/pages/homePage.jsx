@@ -1,6 +1,5 @@
 import HobbiesButton from "../components/home/HobbiesButton"
 import MoviesButton from "../components/home/MoviesButton.jsx"
-// import MusicButton from "../components/home/MusicButton"
 // import StudiesButton from "../components/home/StudiesButton"
 // import TodolistButton from "../components/home/TodolistButton"
 // import WelcomeButton from "../components/home/WelcomeButton"
@@ -14,6 +13,8 @@ export default function HomePage() {
   <Navbar/>
   <MoviesButton/>
    <HobbiesButton/>
+ 
+
     
   </>
   )
