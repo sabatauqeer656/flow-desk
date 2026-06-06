@@ -1,4 +1,4 @@
-import AskHobbies from "../models/askHobbiesAi.js";
+import AskHobbies from "../models/askHobbiesAiModel.js";
 import { GoogleGenAI } from "@google/genai";
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_AI_KEY });
 
