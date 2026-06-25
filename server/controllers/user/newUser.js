@@ -1,8 +1,8 @@
-import User from "../models/userModel.js";
+import User from "../../models/userModel.js";
 import bcrypt from "bcrypt";
 
 //create new user
-export async function createNewUser(req, res) {
+export async function signupUser(req, res) {
   const { newUserEmail, plainPassword, newUsername } = req.body;
 
   if (!newUserEmail || !plainPassword || !newUsername) {
@@ -22,7 +22,7 @@ export async function createNewUser(req, res) {
     }
 
     const saltRounds = 10;
-    const hashedPassword = bcrypt.hash(plainPassword, saltRounds);
+    const hashedPassword = await bcrypt.hash(plainPassword, saltRounds);
 
     const newUser = await User.create({
       email: newUserEmail,

@@ -1,3 +1,4 @@
+import GetHomePage from "../components/home/getHomePage.jsx"
 import HobbiesButton from "../components/home/HobbiesButton"
 import MoviesButton from "../components/home/MoviesButton.jsx"
 // import StudiesButton from "../components/home/StudiesButton"
@@ -10,6 +11,7 @@ import Navbar from "../components/layout/Navbar.jsx"
 
 export default function HomePage() {
   return (<>
+  <GetHomePage/>
   <Navbar/>
   <MoviesButton/>
    <HobbiesButton/>
