@@ -1,4 +1,5 @@
 import Router from "express";
+<<<<<<< HEAD
 import { signupUser } from "../controllers/user/newUser.js";
 import authenticateToken from "../middelware/authenticate.js";
 
@@ -23,5 +24,17 @@ router.get("/home", authenticateToken, getHomePage);
 // router.get("/todolist/get", getTodoList);
 // // router.post("/todolist/update", updateTodoList);
 // router.delete("/todolist/delete", deleteTodoList);
+=======
+import { createNewUser } from "../controllers/newUser.js";
+import createMoviesEmbeddings from "../controllers/createMoviesEmbeddings.js";
+import semanticSearchMovies from "../controllers/semanticSearchMovies.js";
+import askHobbiesAi from "../controllers/askHobbiesAi.js";
+
+const router = Router();
+router.post("/createnewuser", createNewUser);
+router.post("/embeddings/movies", createMoviesEmbeddings);
+router.post("/search/movies", semanticSearchMovies);
+router.post("/askai/hobbies", askHobbiesAi);
+>>>>>>> 523329b4c5df691430fe2148b015680541ab1d00
 
 export default router;
